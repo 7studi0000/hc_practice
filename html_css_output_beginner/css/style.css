@@ -1,0 +1,183 @@
+/* Base */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #333;
+  font-family: 'hiragino sans', 'hiragino kaku gothic proN', meiryo, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Layout */
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 4%;
+  width: 100%;
+}
+
+/* Header */
+
+.header-inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* Hero */
+
+.hero-image {
+  height: 600px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Sections */
+
+.section {
+  padding-top: 80px;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* About */
+
+.about-inner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  margin-right: 60px;
+  max-width: 420px;
+}
+
+.about-name {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.about-image {
+  border-radius: 50%;
+  flex-shrink: 0;
+  height: 150px;
+  object-fit: cover;
+  width: 150px;
+}
+
+/* Gallery */
+
+.gallery {
+  padding-bottom: 80px;
+}
+
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  width: 30%;
+}
+
+.gallery-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.gallery-text {
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.gallery-image {
+  height: auto;
+  width: 100%;
+}
+
+/* Footer */
+
+.footer {
+  font-size: 12px;
+  padding: 24px 0 40px;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+  .about-inner {
+    flex-direction: column;
+  }
+
+  .about-text {
+    margin-bottom: 24px;
+    margin-right: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .gallery-list {
+    flex-direction: column;
+  }
+
+  .gallery-item {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .gallery-item:last-child {
+    margin-bottom: 0;
+  }
+}
