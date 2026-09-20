@@ -55,18 +55,25 @@ img {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding: 16px 4%;
+  width: 100%;
 }
 
 .logo {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+.logo a {
+  background: #1a2744;
+  color: #fff;
+  display: inline-block;
+  padding: 6px 14px;
 }
 
 .nav-list {
   display: flex;
-  gap: 24px;
+  gap: 16px;
 }
 
 /* Hero */
@@ -84,10 +91,13 @@ img {
 }
 
 .heading {
+  border-bottom: 2px solid #333;
+  display: table;
   font-size: 28px;
   font-weight: 700;
-  margin-bottom: 40px;
-  text-align: center;
+  letter-spacing: .04em;
+  margin: 0 auto 48px;
+  padding-bottom: 4px;
 }
 
 /* About */
@@ -95,17 +105,18 @@ img {
 .about-inner {
   align-items: center;
   display: flex;
+  gap: 80px;
   justify-content: center;
 }
 
 .about-text {
-  margin-right: 60px;
-  max-width: 420px;
+  max-width: 22em;
+  text-align: left;
 }
 
 .about-name {
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .about-image {
@@ -128,6 +139,7 @@ img {
 }
 
 .gallery-item {
+  text-align: center;
   width: 30%;
 }
 
@@ -149,23 +161,65 @@ img {
 /* Footer */
 
 .footer {
+  border-bottom: 1px solid #333;
+  color: #888;
   font-size: 12px;
-  padding: 24px 0 40px;
+  padding: 40px 0 16px;
   text-align: center;
 }
 
 /* Responsive */
 
 @media screen and (max-width: 600px) {
+  .header-inner {
+    padding: 12px 4%;
+  }
+
+  .logo,
+  .nav {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .nav {
+    flex: 2 1 0;
+  }
+
+  .nav-list {
+    gap: 0;
+    width: 100%;
+  }
+
+  .nav-list li {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: center;
+  }
+
+  .nav-list a {
+    display: block;
+    font-size: 14px;
+    padding: 6px 0;
+    white-space: nowrap;
+  }
+
   .about-inner {
+    align-items: flex-start;
     flex-direction: column;
+    gap: 24px;
   }
 
   .about-text {
-    margin-bottom: 24px;
-    margin-right: 0;
-    max-width: 100%;
-    text-align: center;
+    max-width: 18em;
+    text-align: left;
+  }
+
+  .about-image {
+    align-self: center;
   }
 
   .gallery-list {
@@ -174,6 +228,7 @@ img {
 
   .gallery-item {
     margin-bottom: 40px;
+    text-align: center;
     width: 100%;
   }
 
