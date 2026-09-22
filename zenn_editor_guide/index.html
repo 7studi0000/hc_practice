@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zennの2種類の執筆方法について</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <p class="notice">
+      <a href="https://zenn.dev/zenn/articles/editor-guide">投稿に含まれるシークレットの検出機能を追加しました</a>
+      <button class="notice-close" type="button" aria-label="閉じる">×</button>
+    </p>
+
+    <header class="header">
+      <div class="header-inner">
+        <a class="brand" href="#">
+          <span class="brand-mark" aria-hidden="true"></span>
+          Zenn
+        </a>
+        <div class="header-tools">
+          <button class="icon-button" type="button" aria-label="検索">⌕</button>
+          <button class="icon-button" type="button" aria-label="テーマを切り替える">☾</button>
+          <a class="login" href="#">Log in</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article class="article">
+        <div class="article-bar">
+          <a class="author-mini" href="#">
+            <span class="avatar avatar-sm" aria-hidden="true">Z</span>
+            Zenn公式
+          </a>
+          <button class="toc-button" type="button">目次 ▾</button>
+        </div>
+
+        <header class="hero">
+          <div class="pencil" aria-hidden="true">
+            <span class="pencil-paper">notes</span>
+            <span class="pencil-body"></span>
+          </div>
+          <h1>Zennの2種類の執筆方法について</h1>
+          <p class="date">2020/09/06に公開</p>
+        </header>
+
+        <div class="sheet">
+          <ul class="tags">
+            <li><a href="#">Zenn</a></li>
+            <li><a href="#">Idea</a></li>
+          </ul>
+
+          <p>このページではZennで記事や本を作成するときの執筆環境について紹介します。</p>
+
+          <h2>Zenn の執筆方法は 2 種類</h2>
+          <p>Zennのコンテンツは次のいずれかの方法で作成します。</p>
+
+          <h3>1. Webエディター</h3>
+          <div class="mock-window" aria-hidden="true">
+            <div class="mock-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="mock-editor">
+              <p class="mock-title">Title comes here</p>
+              <p><strong>## heading</strong></p>
+              <p>This is Zenn editor working on browsers.</p>
+            </div>
+          </div>
+          <p>ブラウザ上で動くエディターです。Zennにログインした状態で使用します。</p>
+
+          <details class="shortcut">
+            <summary>ショートカットを使用しよう</summary>
+            <p>オンラインのmarkdownエディターでは、以下のショートカットを使用できます。</p>
+            <ul>
+              <li><strong>Ctrl + P（プレビュー）</strong>：markdownがどのように表示されるかをチェックできます。もう一度ショートカットを実行すると、エディターに戻ります。</li>
+              <li><strong>Ctrl + S（内容の保存）</strong>：変更内容を保存します。</li>
+              <li><strong>Ctrl + I（埋め込み）</strong>：ツイートや YouTube、CodePen、SpeakerDeck などの埋め込みコンテンツを挿入するためのモーダルが表示されます。</li>
+            </ul>
+            <p>※ Mac の場合は Ctrl の代わりに ⌘ キーを使用します。</p>
+          </details>
+
+          <h3>2. ローカルのテキストエディター + CLI</h3>
+          <div class="mock-window mock-window-dark" aria-hidden="true">
+            <div class="mock-bar">
+              <span></span><span></span><span></span>
+              <p>zenn-markdown-guide.md</p>
+            </div>
+            <pre><code>title: "Zennの執筆方法"
+topics: ["markdown", "zenn"]
+published: false</code></pre>
+          </div>
+          <p>
+            自分の好きな環境で執筆したい方は GitHub リポジトリとの連携機能
+            を利用することをおすすめします。リポジトリ連携をすると、特定のブランチに変更があったときに自動でコンテンツが zenn.dev に反映されるようになります。
+          </p>
+          <p><a class="doc-link" href="#">📘 Zenn と GitHub リポジトリを連携する →</a></p>
+          <p>
+            リポジトリ連携時には、ローカルでmarkdownファイルを作成し、好きなテキストエディターで編集を行います。Zenn CLIを使うことでブラウザでプレビューしながら執筆することが可能になります。
+          </p>
+          <p><a class="doc-link" href="#">📘 Zenn CLI を導入する →</a></p>
+          <p>
+            オンラインエディターを使う場合も、CLIを使う場合もmarkdownの書き方は変わりません。具体的な記法は下記のリンク先をご覧ください。
+          </p>
+          <p><a class="doc-link" href="#">📘 Zenn のmarkdown記法 →</a></p>
+
+          <div class="actions">
+            <button type="button">♡ 115</button>
+            <button type="button">▢ 6</button>
+          </div>
+
+          <div class="profile">
+            <span class="avatar" aria-hidden="true">Z</span>
+            <div>
+              <p class="profile-name">Zenn公式</p>
+              <p>Zennの使い方や開発状況を発信する公式アカウントです。</p>
+              <button class="follow" type="button">フォロー</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <section class="discussion">
+        <h2>Discussion</h2>
+        <div class="people" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </div>
+        <p>Zennの使い方や開発状況を発信する公式アカウントです。</p>
+        <a class="login" href="#">Login</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-lead">エンジニアのための情報共有コミュニティ</p>
+      <div class="footer-grid">
+        <section>
+          <h2>About</h2>
+          <ul>
+            <li><a href="#">Zennについて</a></li>
+            <li><a href="#">運営会社</a></li>
+            <li><a href="#">お知らせ・リリース</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Guides</h2>
+          <ul>
+            <li><a href="#">使い方</a></li>
+            <li><a href="#">法人向けメニュー</a></li>
+            <li><a href="#">Publication / Pro</a></li>
+            <li><a href="#">よくある質問</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Links</h2>
+          <ul>
+            <li><a href="#">X(Twitter)</a></li>
+            <li><a href="#">connpass</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">メディアキット</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="#">利用規約</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+            <li><a href="#">特商法表記</a></li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
