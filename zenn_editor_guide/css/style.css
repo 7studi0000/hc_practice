@@ -462,7 +462,7 @@ img {
 
   .columns {
     display: block;
-    margin-top: 16px;
+    margin-top: 0;
     max-width: none;
     padding-bottom: 48px;
     width: auto;
